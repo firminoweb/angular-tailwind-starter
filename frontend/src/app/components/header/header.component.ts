@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
+  // @Input() offsetMenu = false;
+  @Output() offsetMenuEvent: EventEmitter<boolean> = new EventEmitter();
+  offsetMenu = false;
 
+  onMenu(val: boolean) {
+    this.offsetMenuEvent.emit(val);
+    this.offsetMenu = !this.offsetMenu;
+  }
 }

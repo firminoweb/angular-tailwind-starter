@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'frontend';
+  emitMenu = false;
+
+  getEmit(val: boolean) {
+    this.emitMenu = val;
+  }
 }
