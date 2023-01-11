@@ -49,7 +49,7 @@
       <nav class="mt-5 flex-shrink-0 h-full divide-y divide-cyan-800 overflow-y-auto" aria-label="Sidebar">
 
         <div class="px-2 space-y-1">
-          <a *ngFor="let item of sideMenu" routerLink="{{item.url}}" routerLinkActive="bg-cyan-800" [routerLinkActiveOptions]="{exact:true}" class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-lg leading-6 font-medium rounded-md" title="{{item.title}}">
+          <a *ngFor="let item of sideMenu" routerLink="{{item.url}}" routerLinkActive="bg-cyan-800" [routerLinkActiveOptions]="{exact:true}" class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-lg leading-6 font-medium rounded-md" title="{{item.title}}" (click)="offsetMenu = !offsetMenu; onMenu(offsetMenu)">
             <div [innerHTML]="getSVGImage(item.icon)"></div>
             {{item.label}}
           </a>
