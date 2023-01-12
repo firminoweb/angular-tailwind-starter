@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "serve": "http-server ./dist/frontend",
+    "local:prod": "npm run build && npm run serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -19,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
     "rxjs": "~7.5.0",
+    "swiper": "^8.4.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
