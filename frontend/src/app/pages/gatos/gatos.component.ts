@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CatService } from 'src/app/services/cat/cat.service';
 
-import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Pagination, Navigation } from "swiper";
 
 SwiperCore.use([Pagination, Navigation]);

@@ -12,7 +12,7 @@ import { LatestCatsModule } from './components/latest-cats/latest-cats.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,13 +5,16 @@ import { LatestCatsComponent } from './latest-cats.component';
 
 import { RouterModule } from '@angular/router';
 
+import { LoaderModule } from '../loader/loader.module';
+
 @NgModule({
   declarations: [
     LatestCatsComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    LoaderModule
   ],
   exports: [
     LatestCatsComponent

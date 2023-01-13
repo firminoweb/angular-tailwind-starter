@@ -20,17 +20,4 @@ export class HomeComponent {
   mostSearched() {
     this.router.navigate(['/mais-buscados']);
   }
-
-  // onSearchEntered(value:String) {
-  //   this.searchValue=value;
-
-  //   if(this.searchValue !== '') {
-  //     this.catService.searchByCatName(this.searchValue).subscribe(data => {
-  //       this.suggestedCats=data;
-  //       this.hidden=false;
-  //     })
-  //   } else {
-  //     this.hidden=true;
-  //   }
-  // }
 }
