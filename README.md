@@ -22,3 +22,6 @@ A seguir, especificações do projeto de BackEnd (BFF), feito com NodeJS + Expre
 * Express.js 4 (Web Application)
 * Axios (Http Request)
 * Nodemon (Monitor and Restarter Server)
+
+### **IMPORTANTE**: Para localhost, é necessário executar primeiro o BackEnd para que o FrontEnd funcione corretamente.
+---
