@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "6a4dde79-5922-4060-bc16-5c758d50f557",
+		"name": "The Cat API (BFF)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1465256"
+	},
+	"item": [
+		{
+			"name": "Listar Raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://angular-cat-bff.vercel.app/getbreeds/:limit",
+					"protocol": "https",
+					"host": [
+						"angular-cat-bff",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"getbreeds",
+						":limit"
+					],
+					"variable": [
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontrar Raça por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://angular-cat-bff.vercel.app/getbreed/:id",
+					"protocol": "https",
+					"host": [
+						"angular-cat-bff",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"getbreed",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "bsho"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontrar uma imagem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://angular-cat-bff.vercel.app/getimage/:id",
+					"protocol": "https",
+					"host": [
+						"angular-cat-bff",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"getimage",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "s4wQfYoEk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontrar Imagens por raça",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://angular-cat-bff.vercel.app/catimages/:id",
+					"protocol": "https",
+					"host": [
+						"angular-cat-bff",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"catimages",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "bsho"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontrar Gato por nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://angular-cat-bff.vercel.app/catbyname/:name",
+					"protocol": "https",
+					"host": [
+						"angular-cat-bff",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"catbyname",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "shorthair"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
