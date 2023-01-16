@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { CatService } from 'src/app/services/cat/cat.service';
 
 @Component({
-  selector: 'app-mais-buscados',
-  templateUrl: './mais-buscados.component.html'
+  selector: 'app-most-searched',
+  templateUrl: './most-searched.component.html'
 })
 
-export class MaisBuscadosComponent {
+export class MostSearchedComponent {
   cats: any;
   showLoader: boolean = true;
 

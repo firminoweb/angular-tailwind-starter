@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { GatosComponent } from './gatos.component';
+import { MostSearchedComponent } from './most-searched.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: GatosComponent,
+    component: MostSearchedComponent,
   },
 ];
 
@@ -15,4 +15,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 
-export class GatosPageRoutingModule {}
+export class MostSearchedPageRoutingModule {}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListaRacasComponent } from './lista-racas.component';
+import { MostSearchedComponent } from './most-searched.component';
 
-describe('ListaRacasComponent', () => {
-  let component: ListaRacasComponent;
-  let fixture: ComponentFixture<ListaRacasComponent>;
+describe('MostSearchedComponent', () => {
+  let component: MostSearchedComponent;
+  let fixture: ComponentFixture<MostSearchedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListaRacasComponent ]
+      declarations: [ MostSearchedComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListaRacasComponent);
+    fixture = TestBed.createComponent(MostSearchedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

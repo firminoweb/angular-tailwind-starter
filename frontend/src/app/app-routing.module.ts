@@ -7,16 +7,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then((m) => m.HomePageModule),
   },
   {
-    path: 'lista-racas',
-    loadChildren: () => import('./pages/lista-racas/lista-racas.module').then((m) => m.ListaRacasPageModule),
+    path: 'breed-list',
+    loadChildren: () => import('./pages/breed-list/breed-list.module').then((m) => m.BreedListPageModule),
   },
   {
-    path: 'mais-buscados',
-    loadChildren: () => import('./pages/mais-buscados/mais-buscados.module').then((m) => m.MaisBuscadosPageModule),
+    path: 'most-searched',
+    loadChildren: () => import('./pages/most-searched/most-searched.module').then((m) => m.MostSearchedPageModule),
   },
   {
-    path: 'gatos/:id',
-    loadChildren: () => import('./pages/gatos/gatos.module').then((m) => m.GatosModule),
+    path: 'cats/:id',
+    loadChildren: () => import('./pages/cats/cats.module').then((m) => m.CatsModule),
   },
 ];
 

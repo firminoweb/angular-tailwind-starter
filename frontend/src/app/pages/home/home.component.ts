@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CatService } from 'src/app/services/cat/cat.service';
 
 @Component({
   selector: 'app-home',
@@ -13,11 +12,10 @@ export class HomeComponent {
   hidden: boolean = true;
 
   constructor(
-    private catService: CatService,
     private router: Router
   ) { }
 
   mostSearched() {
-    this.router.navigate(['/mais-buscados']);
+    this.router.navigate(['/most-searched']);
   }
 }

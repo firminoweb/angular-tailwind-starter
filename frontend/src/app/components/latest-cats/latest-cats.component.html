@@ -2,7 +2,7 @@
 
 <div *ngIf="!showLoader" class="relative grid gap-6 bg-cover sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
 
-  <a *ngFor="let cat of cats" [routerLink]="['/gatos', cat.id]" class="relative flex flex-col items-center justify-center p-6 space-y-4 overflow-hidden transition-shadow duration-100 bg-cover shadow-xl rounded-2xl group hover:shadow-2xl">
+  <a *ngFor="let cat of cats" [routerLink]="['/cats', cat.id]" class="relative flex flex-col items-center justify-center p-6 space-y-4 overflow-hidden transition-shadow duration-100 bg-cover shadow-xl rounded-2xl group hover:shadow-2xl">
     <div class="absolute inset-0">
       <div class="absolute bottom-0 left-0 z-10 opacity-30 bg-gradient-to-b from-transparent to-gray-900"></div>
       <img class="absolute inset-0 object-cover transition duration-500 opacity-100 group-hover:opacity-70 group-hover:scale-125" src="{{cat.image.url}}" alt="Cat" loading="lazy">

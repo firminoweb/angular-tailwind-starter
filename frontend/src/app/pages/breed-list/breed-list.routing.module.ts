@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MaisBuscadosComponent } from './mais-buscados.component';
+import { BreedListComponent } from './breed-list.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MaisBuscadosComponent,
+    component: BreedListComponent,
   },
 ];
 
@@ -15,4 +15,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 
-export class MaisBuscadosPageRoutingModule {}
+export class BreedListPageRoutingModule {}

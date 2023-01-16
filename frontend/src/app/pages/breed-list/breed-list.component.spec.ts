@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaisBuscadosComponent } from './mais-buscados.component';
+import { BreedListComponent } from './breed-list.component';
 
-describe('MaisBuscadosComponent', () => {
-  let component: MaisBuscadosComponent;
-  let fixture: ComponentFixture<MaisBuscadosComponent>;
+describe('BreedListComponent', () => {
+  let component: BreedListComponent;
+  let fixture: ComponentFixture<BreedListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MaisBuscadosComponent ]
+      declarations: [ BreedListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MaisBuscadosComponent);
+    fixture = TestBed.createComponent(BreedListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

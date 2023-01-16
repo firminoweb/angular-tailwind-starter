@@ -5,13 +5,11 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { RouterModule } from '@angular/router';
-// import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     MenuComponent,
-    // LoaderComponent,
   ],
   imports: [
     CommonModule,

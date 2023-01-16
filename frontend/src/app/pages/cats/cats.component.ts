@@ -7,11 +7,11 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 SwiperCore.use([Pagination, Navigation]);
 
 @Component({
-  selector: 'app-gatos',
-  templateUrl: './gatos.component.html'
+  selector: 'app-cats',
+  templateUrl: './cats.component.html'
 })
 
-export class GatosComponent implements OnInit {
+export class CatsComponent implements OnInit {
   cat: any;
   image: string = '';
   rates: number[] = [1, 2, 3, 4, 5];
@@ -20,7 +20,7 @@ export class GatosComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private catService:CatService
+    private catService: CatService
   ) { }
 
   ngOnInit(): void {
@@ -29,7 +29,7 @@ export class GatosComponent implements OnInit {
     }
 
     let id  = this.route.snapshot.params['id'];
-    //Get Gatos
+    //Get Cats
     this.showLoader = true;
     this.catService.getCat(id).subscribe( data => {
     this.cat = data;
@@ -39,7 +39,7 @@ export class GatosComponent implements OnInit {
       })
     })
 
-    //Get Imagens do Gato
+    //Get Cat Images
     this.catService.getcatImages(id).subscribe(data => {
       this.catimages = data;
 

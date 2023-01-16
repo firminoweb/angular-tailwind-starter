@@ -1,9 +1,9 @@
 <h1 class="text-4xl mb-2 font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-  <span class="block xl:inline">Os Mais </span>
-  <span data-primary="indigo-600" class="block text-cyan-600 xl:inline">Buscados</span>
+  <span class="block xl:inline">The Most </span>
+  <span data-primary="indigo-600" class="block text-cyan-600 xl:inline">Searched</span>
 </h1>
 
-<p class="text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">Confira as 10 Top Raças mais Buscadas.</p>
+<p class="text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">Check out the Top 10 Most Searched Breeds.</p>
 
 <div class="max-w-6xl mx-auto xl:max-w-7xl">
   <app-loader *ngIf="showLoader" class="mt-"></app-loader>
@@ -16,7 +16,7 @@
 
             <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
               <div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                <a [routerLink]="['/gatos', cat.id]">
+                <a [routerLink]="['/cats', cat.id]">
                   <img class="object-cover lg:h-full lg:w-full" src="{{cat.image.url}}" loading="lazy">
                 </a>
               </div>
@@ -25,7 +25,7 @@
           <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
             <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-8 lg:max-w-none">
               <h2 class="text-4xl font-bold text-cyan-700">
-                <a [routerLink]="['/gatos', cat.id]" class="hover:underline">{{i + 1}}. {{cat.name}}</a>
+                <a [routerLink]="['/cats', cat.id]" class="hover:underline">{{i + 1}}. {{cat.name}}</a>
               </h2>
 
               <p class="mt-6 text-lg text-gray-500">{{cat.description}}</p>

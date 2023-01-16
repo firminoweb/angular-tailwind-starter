@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://angular-cat-bff.vercel.app'
+  apiUrl: 'https://angular-tailwind-bff.vercel.app'
 };

@@ -6,7 +6,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 
 export class HeaderComponent {
-  // @Input() offsetMenu = false;
   @Output() offsetMenuEvent: EventEmitter<boolean> = new EventEmitter();
   offsetMenu = false;
 

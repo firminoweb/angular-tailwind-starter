@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { GatosComponent } from './gatos.component';
-import { GatosPageRoutingModule } from './gatos.routing.module';
+import { CatsComponent } from './cats.component';
+import { CatsPageRoutingModule } from './cats.routing.module';
 
 import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
-    GatosComponent,
+    CatsComponent,
   ],
   imports: [
     CommonModule,
-    GatosPageRoutingModule,
+    CatsPageRoutingModule,
     SwiperModule
   ]
 })
 
-export class GatosModule { }
+export class CatsModule { }
