@@ -1,26 +1,25 @@
-# The Cat API (BackEnd)
-Dashboard utilizando Angular 15 e Tailwind CSS. Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+# Angular + Tailwind CSS Starter with Cat API (BackEnd)
+Dashboard using Angular 15 and Tailwind CSS. This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
-O projeto está disponível na [Vercel](https://vercel.com/) onde está hospedado e também é feito o processo de deploy.
+## Specifications
+Follow below, the specifications of the BackEnd:
 
-## Especificações
-A seguir, especificações do projeto de BackEnd (BFF), feito com NodeJS + ExpressJS:
 * Node.js 18 (JS framework)
 * Express.js 4 (Web Application)
 * Axios (Http Request)
 * Nodemon (Monitor and Restarter Server)
 
-## Iniciando
-Com o repositório em seu computador e já no diretório frontend $ `angular-cat-api/backend` execute o comando `npm install` para a instalação de todos os módulos do Node.
+## Starting
+With the repository on your computer and already in the backend directory `$ angular-tailwind-starter/backend` run the `npm install` command to install all Node modules.
 
-## Desenvolvimento
-Execute `node start.js` ou `npm start` para executar o projeto em modo de desenvolvimento e navegue através da URL `http://localhost:3000/`. para visualizar um 'Olá' e se certificar que está rodando normalmente.
+## Development
+Run `node start.js` or `npm start` to run the project in development mode and navigate through the URL `http://localhost:3000/`. to display a 'Hello World!' and make sure it is running normally.
 
 ## Build
-Não há necessidade de geração de uma build, por se tratar de uma aplicação auto-executável.
+There is no need to generate a build, as it is a self-executing application.
 
 ## Auto-Restart
-Em produção, é aconselhável executar o projeto através dos comandos `nodemon start.js` ou `npm run dev`, pois ele o fará utilizando o Nodemon, que é um monitor de execução do projeto que restarta automaticamente em caso de queda ou reinício do server.
+In production, it is advisable to run the project through the commands `nodemon start.js` or `npm run dev`, as it will do so using Nodemon, which is a project execution monitor that restarts automatically in case of crash or restart of the server.
 
 ## Deploy
-Por estar conectado com a Vercel, processo do qual segue a esteira ágil do CI/CD, a aplicação deles se conecta diretamente com o repositório do projeto, por autorização via token do Github, basta apenas fazer o commit das alterações, para que automaticamente sejam atualizados.
+As it is connected to Vercel, a process which follows the agile CI/CD path, their application connects directly to the project repository, via authorization via a Github token, all you have to do is commit the changes, so that they are automatically updated.

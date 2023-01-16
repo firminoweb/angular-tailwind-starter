@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "Listar Raças",
+			"name": "Breeds List",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -34,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "Encontrar Raça por ID",
+			"name": "Find Breed by ID",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -61,7 +61,7 @@
 			"response": []
 		},
 		{
-			"name": "Encontrar uma imagem",
+			"name": "Find Cat Image",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -88,7 +88,7 @@
 			"response": []
 		},
 		{
-			"name": "Encontrar Imagens por raça",
+			"name": "Find Images by Breed",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -115,7 +115,7 @@
 			"response": []
 		},
 		{
-			"name": "Encontrar Gato por nome",
+			"name": "Find Cats by Name",
 			"request": {
 				"method": "GET",
 				"header": [],

@@ -1,15 +1,15 @@
-# The Cat API
-Aplicação teste para o processo de seleção para Engenheiro FrontEnd para o Banco Itaú, focado em um Monorepo contendo o Painel FrontEnd e um BFF em NodeJS, com o objetivo de coletar as seguintes informações da API pública de Gatos.
+# Angular + Tailwind CSS Starter with Cat API
+A Kick start project, focused on a Monorepo containing the FrontEnd (Angular + Tailwind CSS) Panel and a BFF in NodeJS, with the objective of collecting the following information from the public Cat API.
 
-* Coletar e visualizar os endpoints da API
-* Uma home onde mostra uma apresentação e resumo de raças
-* Exibir uma lista de todas as raças de gatos
-* Exibir informações das raças a partir da escolha de uma da lista
-* Foi feito uma lista das 10 raças mais buscadas na API de Gatos
-* Uma busca para encontrar raças de gatos
+* Collect and view API endpoints
+* A home where it shows a presentation and summary of breeds
+* Display a list of all cat breeds
+* Display breed information by choosing one from the list
+* A list of the 10 most searched breeds in the Cats API
 
 ## FrontEnd
-A seguir, especificações do projeto de FrontEnd, feito com Angular 15:
+Follow below, the specifications of the FrontEnd:
+
 * Angular 15 (JS framework)
 * Tailwind 3 (CSS Lib)
 * Karma + Jasmine (Test)
@@ -17,11 +17,12 @@ A seguir, especificações do projeto de FrontEnd, feito com Angular 15:
 * Swiper (Photo Carousel)
 
 ## BackEnd
-A seguir, especificações do projeto de BackEnd (BFF), feito com NodeJS + ExpressJS:
+Follow below, the specifications of the BackEnd:
+
 * Node.js 18 (JS framework)
 * Express.js 4 (Web Application)
 * Axios (Http Request)
 * Nodemon (Monitor and Restarter Server)
 
-### **IMPORTANTE**: Para localhost, é necessário executar primeiro o BackEnd para que o FrontEnd funcione corretamente.
+### **IMPORTANT**: For localhost, you need to run BFF first for FrontEnd works properly.
 ---
