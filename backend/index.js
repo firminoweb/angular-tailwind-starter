@@ -9,45 +9,45 @@ app.use(bodyparser.json());
 
 require('dotenv').config();
 
-//setar Api externa (Cat API)
+//Setting (Cat API)
 var axios = require('axios');
 
 app.get('/', (req, res) => {
-  res.send('Olá!')
+  res.send('Hello World!')
 })
 
-// Listar Raças
+// Breed List
 app.get('/getbreeds/:limit', (req, res) => {
   const {limit} = req.params;
   getData(`https://api.thecatapi.com/v1/breeds?limit=${limit}&page=0`, req, res);
 })
 
-// Encontrar Raça por ID
+// Find breed by ID
 app.get('/getbreed/:id', (req, res) => {
   const {id} = req.params;
   getData(`https://api.thecatapi.com/v1/breeds/${id}`, req, res);
 })
 
-// Encontrar uma imagem
+// Find An Image
 app.get('/getimage/:id', (req, res) => {
   const {id}=req.params;
   getData(`https://api.thecatapi.com/v1/images/${id}`, req, res); 
 })
 
-// Encontrar Imagens por raça
+// Find Images by Breed
 app.get('/catimages/:id', (req, res) => {
   const {id}=req.params;
   getData(`https://api.thecatapi.com/v1/images/search?format=json&limit=8&breed_ids=${id}`, req, res);
 })
 
-// Encontrar Gato por nome
+// Find Cats by breed name
 app.get('/catbyname/:name', (req, res) => {
   const {name}=req.params;
   getData(`https://api.thecatapi.com/v1/breeds/search?q=${name}`, req, res);
 })
 
 
-// Custom function para dados assíncronos
+// Async Custom function
 const getData = async(url = '', req, res) => {
   axios(url, {
       method: 'get',
